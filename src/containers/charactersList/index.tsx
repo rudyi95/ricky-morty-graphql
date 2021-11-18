@@ -1,9 +1,11 @@
-import React, { BaseSyntheticEvent, memo, useState } from "react";
+import React, { memo, useContext } from "react";
 import { useQuery } from "@apollo/client";
 import { CircularProgress } from "@mui/material";
 
 import SmallUserCard from "../../components/SmallUserCard";
 import ModalInfo from "../../components/ModalInfo";
+import { CharactersContext } from "../../components/context/CharactersContext";
+
 import CharacterInfo from "../characterInfo";
 
 import { GET_CHARECTERS } from "../../graphql/queries/character";
@@ -16,24 +18,13 @@ interface IProps {
 
 const CharactersList: React.FC<IProps> = ({ currPage }) => {
   const classes = useStyles();
-  const [openModal, setOpenModal] = useState<boolean>(false);
-  const [cardId, setCardId] = useState<Nullable<number>>(null);
+  const { openModal, openModalHandler, cardId, pickCardHandler } = useContext(CharactersContext)
 
   const { data, loading } = useQuery<CharactersResponse>(GET_CHARECTERS, {
     variables: { page: currPage },
   });
 
   const characters: Character[] = data?.characters.results || [];
-
-  const openModalHandler = () => {
-    setOpenModal(!openModal);
-  };
-
-  const pickCharacterHandler = (e: BaseSyntheticEvent) => {
-    const { id } = e.currentTarget;
-    setCardId(+id);
-    openModalHandler();
-  };
 
   if (loading) {
     return <CircularProgress />;
@@ -45,7 +36,7 @@ const CharactersList: React.FC<IProps> = ({ currPage }) => {
         <SmallUserCard
           key={index}
           character={character}
-          onClick={pickCharacterHandler}
+          onClick={pickCardHandler}
         />
       ))}
       <ModalInfo open={openModal} onClose={openModalHandler}>

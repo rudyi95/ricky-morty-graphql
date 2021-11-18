@@ -3,6 +3,7 @@ import { useQuery } from "@apollo/client";
 
 import CharactersList from "../../containers/charactersList";
 import Pagination from "../../components/Pagination";
+import { CharactersContextProvider } from "../../components/context/CharactersContext";
 
 import { GET_CHARACTERS_INFO } from "../../graphql/queries/character";
 
@@ -25,8 +26,10 @@ const MainPage: React.FC = () => {
 
   return (
     <div className={classes.root}>
-      <CharactersList currPage={currPage} />
-      <Pagination pages={pages} onChangePage={setCurrPage} />
+      <CharactersContextProvider>
+        <CharactersList currPage={currPage} />
+        <Pagination pages={pages} onChangePage={setCurrPage} />
+      </CharactersContextProvider>
     </div>
   );
 };
