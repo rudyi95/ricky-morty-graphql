@@ -1,27 +1,30 @@
 {
   "files": {
+    "static/js/0.ec4e1e50.chunk.js": "/ricky-morty-graphql/static/js/0.ec4e1e50.chunk.js",
+    "static/js/0.ec4e1e50.chunk.js.map": "/ricky-morty-graphql/static/js/0.ec4e1e50.chunk.js.map",
     "main.css": "/ricky-morty-graphql/static/css/main.391a5b3a.chunk.css",
-    "main.js": "/ricky-morty-graphql/static/js/main.50daaa4f.chunk.js",
-    "main.js.map": "/ricky-morty-graphql/static/js/main.50daaa4f.chunk.js.map",
-    "runtime-main.js": "/ricky-morty-graphql/static/js/runtime-main.e9e566c5.js",
-    "runtime-main.js.map": "/ricky-morty-graphql/static/js/runtime-main.e9e566c5.js.map",
-    "static/js/2.33b44d11.chunk.js": "/ricky-morty-graphql/static/js/2.33b44d11.chunk.js",
-    "static/js/2.33b44d11.chunk.js.map": "/ricky-morty-graphql/static/js/2.33b44d11.chunk.js.map",
-    "static/js/3.987242fc.chunk.js": "/ricky-morty-graphql/static/js/3.987242fc.chunk.js",
-    "static/js/3.987242fc.chunk.js.map": "/ricky-morty-graphql/static/js/3.987242fc.chunk.js.map",
-    "static/js/4.9a4475b0.chunk.js": "/ricky-morty-graphql/static/js/4.9a4475b0.chunk.js",
-    "static/js/4.9a4475b0.chunk.js.map": "/ricky-morty-graphql/static/js/4.9a4475b0.chunk.js.map",
-    "static/js/5.d5954cb4.chunk.js": "/ricky-morty-graphql/static/js/5.d5954cb4.chunk.js",
-    "static/js/5.d5954cb4.chunk.js.map": "/ricky-morty-graphql/static/js/5.d5954cb4.chunk.js.map",
+    "main.js": "/ricky-morty-graphql/static/js/main.4babe310.chunk.js",
+    "main.js.map": "/ricky-morty-graphql/static/js/main.4babe310.chunk.js.map",
+    "runtime-main.js": "/ricky-morty-graphql/static/js/runtime-main.cfcd7990.js",
+    "runtime-main.js.map": "/ricky-morty-graphql/static/js/runtime-main.cfcd7990.js.map",
+    "static/js/3.3a8a367d.chunk.js": "/ricky-morty-graphql/static/js/3.3a8a367d.chunk.js",
+    "static/js/3.3a8a367d.chunk.js.map": "/ricky-morty-graphql/static/js/3.3a8a367d.chunk.js.map",
+    "static/js/4.d09bcd4c.chunk.js": "/ricky-morty-graphql/static/js/4.d09bcd4c.chunk.js",
+    "static/js/4.d09bcd4c.chunk.js.map": "/ricky-morty-graphql/static/js/4.d09bcd4c.chunk.js.map",
+    "static/js/5.ce9a8142.chunk.js": "/ricky-morty-graphql/static/js/5.ce9a8142.chunk.js",
+    "static/js/5.ce9a8142.chunk.js.map": "/ricky-morty-graphql/static/js/5.ce9a8142.chunk.js.map",
+    "static/js/6.fc23b400.chunk.js": "/ricky-morty-graphql/static/js/6.fc23b400.chunk.js",
+    "static/js/6.fc23b400.chunk.js.map": "/ricky-morty-graphql/static/js/6.fc23b400.chunk.js.map",
     "index.html": "/ricky-morty-graphql/index.html",
     "static/css/main.391a5b3a.chunk.css.map": "/ricky-morty-graphql/static/css/main.391a5b3a.chunk.css.map",
-    "static/js/2.33b44d11.chunk.js.LICENSE.txt": "/ricky-morty-graphql/static/js/2.33b44d11.chunk.js.LICENSE.txt",
-    "static/js/3.987242fc.chunk.js.LICENSE.txt": "/ricky-morty-graphql/static/js/3.987242fc.chunk.js.LICENSE.txt"
+    "static/js/0.ec4e1e50.chunk.js.LICENSE.txt": "/ricky-morty-graphql/static/js/0.ec4e1e50.chunk.js.LICENSE.txt",
+    "static/js/3.3a8a367d.chunk.js.LICENSE.txt": "/ricky-morty-graphql/static/js/3.3a8a367d.chunk.js.LICENSE.txt",
+    "static/js/4.d09bcd4c.chunk.js.LICENSE.txt": "/ricky-morty-graphql/static/js/4.d09bcd4c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e9e566c5.js",
-    "static/js/2.33b44d11.chunk.js",
+    "static/js/runtime-main.cfcd7990.js",
+    "static/js/3.3a8a367d.chunk.js",
     "static/css/main.391a5b3a.chunk.css",
-    "static/js/main.50daaa4f.chunk.js"
+    "static/js/main.4babe310.chunk.js"
   ]
 }
