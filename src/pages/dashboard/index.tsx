@@ -1,32 +1,13 @@
 import React from "react";
-import { Card, CardContent, Typography } from "@mui/material";
-import { useNavigate } from "react-router";
 
-import useStyles from "./style";
+import { DashboardContextProvider } from "../../components/context/Dashboard";
 
-const Dashboard: React.FC = () => {
-  const classes = useStyles();
-  const navigate = useNavigate();
+import DashboardView from "./view";
 
-  return (
-    <div className={classes.root}>
-      <Card onClick={() => navigate("/characters")}>
-        <CardContent>
-          <Typography>Characters</Typography>
-        </CardContent>
-      </Card>
-      <Card>
-        <CardContent>
-          <Typography>Episodes</Typography>
-        </CardContent>
-      </Card>
-      <Card>
-        <CardContent>
-          <Typography>Planets</Typography>
-        </CardContent>
-      </Card>
-    </div>
-  );
-};
+const Dashboard: React.FC = () => (
+  <DashboardContextProvider>
+    <DashboardView />
+  </DashboardContextProvider>
+);
 
 export default Dashboard;

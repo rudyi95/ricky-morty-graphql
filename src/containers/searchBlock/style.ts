@@ -2,15 +2,12 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles(() => ({
   root: {
-    height: "100%",
+    height: "45%",
+    width: "80%",
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "space-evenly",
-
-    "& > div": {
-      cursor: "pointer",
-    },
+    justifyContent: 'space-between',
+    padding: "14%",
   },
 }));
 

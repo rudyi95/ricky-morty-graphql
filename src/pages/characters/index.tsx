@@ -3,7 +3,7 @@ import { useQuery } from "@apollo/client";
 
 import CharactersList from "../../containers/charactersList";
 import Pagination from "../../components/Pagination";
-import { CharactersContextProvider } from "../../components/context/CharactersContext";
+import { CharactersContextProvider } from "../../components/context/Characters";
 
 import { GET_CHARACTERS_INFO } from "../../graphql/queries/character";
 

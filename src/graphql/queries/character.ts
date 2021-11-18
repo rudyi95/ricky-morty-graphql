@@ -45,6 +45,23 @@ export const GET_CHARECTERS = gql`
   }
 `;
 
+export const GET_SEARCHED_CHARECTERS = gql`
+  query getCharecters($page: Int, $filter: FilterCharacter) {
+    characters(page: $page, filter: $filter) {
+      results {
+        id
+        image
+      }
+      info {
+        count
+        pages
+        next
+        prev
+      }
+    }
+  }
+`;
+
 export const GET_CHARACTERS_INFO = gql`
   query getCharecters($page: Int, $filter: FilterCharacter) {
     characters(page: $page, filter: $filter) {

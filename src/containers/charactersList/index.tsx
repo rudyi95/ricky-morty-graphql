@@ -4,7 +4,7 @@ import { CircularProgress } from "@mui/material";
 
 import SmallUserCard from "../../components/SmallUserCard";
 import ModalInfo from "../../components/ModalInfo";
-import { CharactersContext } from "../../components/context/CharactersContext";
+import { CharactersContext } from "../../components/context/Characters";
 
 import CharacterInfo from "../characterInfo";
 
