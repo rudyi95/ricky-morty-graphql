@@ -3,6 +3,9 @@ import { useFormik } from "formik";
 import { Button, TextField } from "@mui/material";
 
 import { DashboardContext } from "../../components/context/Dashboard";
+import CustomSelect from "../../components/CustomSelect";
+
+import { CHARACTER_STATUSES, GENDERS } from "../../utils/constants";
 
 import useStyles from "./style";
 
@@ -34,10 +37,10 @@ const SearchContainer: React.FC = () => {
         value={formik.values.name}
         onChange={formik.handleChange}
       />
-      <TextField
+      <CustomSelect
         name="status"
         label="Status"
-        variant="outlined"
+        items={CHARACTER_STATUSES}
         value={formik.values.status}
         onChange={formik.handleChange}
       />
@@ -55,10 +58,10 @@ const SearchContainer: React.FC = () => {
         value={formik.values.type}
         onChange={formik.handleChange}
       />
-      <TextField
+      <CustomSelect
         name="gender"
         label="Gender"
-        variant="outlined"
+        items={GENDERS}
         value={formik.values.gender}
         onChange={formik.handleChange}
       />

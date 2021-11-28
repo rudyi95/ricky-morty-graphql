@@ -34,3 +34,8 @@ declare interface RouteProps {
   exact?: boolean;
   name?: string;
 }
+
+declare interface SelectItem {
+  value: string | number;
+  label: string | number;
+}
